@@ -21,5 +21,12 @@ channels:
     - "WillWork"
 ```
 
+## Docker
+Noty works well with docker too! Just a few steps and it will run on a docker container:
+1. Create an image called "noty" `docker build -t noty .`
+2. Run the image `docker run -d -v /your/absolute/path:/app/data noty`
+3. Enjoy!
+
 ### Tips
 - [Find Discord IDs](https://support.discordapp.com/hc/it/articles/206346498-Come-posso-trovare-l-ID-del-mio-server)
+- Type `docker ps` to see all containers running
