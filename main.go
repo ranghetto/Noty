@@ -44,7 +44,7 @@ func main() {
 	err = ds.Open()
 	FatalError(err)
 
-	database, dbError = sql.Open("sqlite3", "./todo.db")
+	database, dbError = sql.Open("sqlite3", "data/todo.db")
 	FatalError(err)
 
 	CreateTableIfDoesntExist(database)
